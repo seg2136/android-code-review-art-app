@@ -16,7 +16,10 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="#c2111d"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:typeface="serif"/>
 
     <Button
         android:layout_width="match_parent"
@@ -28,7 +31,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="21dp"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:typeface="serif"
+        android:textStyle="bold"/>
 
     <ImageView
         android:layout_width="wrap_content"
@@ -47,5 +53,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="74dp"
         android:textSize="16sp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:typeface="serif"
+        android:textColor="#4f4f4f"/>
 </RelativeLayout>

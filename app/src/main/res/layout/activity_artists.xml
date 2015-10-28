@@ -17,8 +17,22 @@
         android:background="#4d1018"
         android:textColor="@android:color/white"
         android:width="150dp"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:typeface="serif"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore Artists Near You"
+        android:id="@+id/artistsLabel"
+        android:textSize="20sp"
+        android:typeface="serif"
+        android:textColor="#4f4f4f"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
