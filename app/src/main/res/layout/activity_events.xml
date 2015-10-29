@@ -9,7 +9,7 @@
                 tools:context="com.example.guest.artiseverywhere.ui.EventsActivity">
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back to Main"
         android:id="@+id/mainButton"
@@ -17,10 +17,11 @@
         android:textColor="@android:color/white"
         android:width="150dp"
         android:textSize="16sp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:textStyle="bold"
-        android:typeface="serif"/>
+        android:typeface="serif"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,5 +35,18 @@
         android:typeface="serif"
         android:textSize="24sp"
         android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="November"
+        android:id="@+id/eventsDateLabel"
+        android:layout_below="@+id/eventsLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"/>
 
 </RelativeLayout>
