@@ -36,6 +36,12 @@ public class ArtistBio {
                 R.drawable.murdza_therese
         ));
 
+        mArtists.add(new Artist("Andy Clift", "Andy Clift completed his MFA in Ceramics and Sculpture at the University of Delaware, Newark, Delaware, studying under Victor Spinski. He received his BFA in Graphic Design and Ceramics from Minnesota State University, Mankato, Minnesota, where he studied with James Tanner and Roy Strassburg. Andy’s large-scale ceramic sculpture and vessel forms pay tribute to the creativity and innovation of the natural world. \n" +
+                "\n" +
+                "Andy was born in Minneapolis, Minnesota and raised in Winona, Minnesota. From 2000-2011, he taught Ceramics and Sculpture at many colleges and universities in Southern California. Andy now resides in Portland Oregon with his wife Katie, two young boys, and Leon the dog.  He is busy setting up a new home studio and updating a mid-century modern home in the woods.",
+                R.drawable.andy_clift
+        ));
+
     }
 
 
