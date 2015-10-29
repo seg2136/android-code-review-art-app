@@ -7,19 +7,49 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.guest.artiseverywhere.R;
+import com.example.guest.artiseverywhere.models.Artist;
+import com.example.guest.artiseverywhere.models.ArtistBio;
 
 public class ArtistsActivity extends AppCompatActivity {
 
     private Button mMainButton;
+    private Button mNextArtistButton;
+    private TextView mArtistNameLabel;
+    private TextView mArtistInfo;
+    private ImageView mArtistImages;
+
+    private ArtistBio mArtistBio;
+    private Artist mCurrentArtist;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_artists);
 
+        mArtistNameLabel = (TextView) findViewById(R.id.artistNameLabel);
+        mArtistInfo = (TextView) findViewById(R.id.artistInfo);
+        mArtistImages = (ImageView) findViewById(R.id.artistImages);
+
+        mNextArtistButton = (Button) findViewById(R.id.nextArtistButton);
         mMainButton = (Button) findViewById(R.id.mainButton);
+
+        mArtistBio = new ArtistBio();
+        mCurrentArtist = mArtistBio.getArtists().get(0);
+
+        setLayoutContent();
+
+        mNextArtistButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mCurrentArtist = mArtistBio.nextArtist(mCurrentArtist);
+                setLayoutContent();
+            }
+        });
 
         mMainButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +58,12 @@ public class ArtistsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    private void setLayoutContent() {
+        mArtistNameLabel.setText(mCurrentArtist.getName());
+        mArtistInfo.setText(mCurrentArtist.getArtistInfo());
+        mArtistImages.setImageResource(mCurrentArtist.getImage());
     }
 
     @Override
