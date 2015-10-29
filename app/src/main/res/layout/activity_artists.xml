@@ -66,10 +66,12 @@
         android:layout_height="match_parent"
         android:id="@+id/scrollView"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/nextArtistButton"
+        android:layout_above="@+id/mainButton"
         android:layout_marginBottom="10dp"
         android:layout_below="@+id/artistImages"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@+id/mainButton"
+        android:layout_toLeftOf="@+id/nextArtistButton">
 
         <TextView
             android:layout_width="wrap_content"

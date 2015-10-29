@@ -30,6 +30,12 @@ public class ArtistBio {
                                 R.drawable.adam_image
         ));
 
+        mArtists.add(new Artist("Therese Murdza", "Years spent in Rehoboth Beach DE, Brooklyn NY, Washington DC, Durham NC, and Grinnell IA, had me drawing on big paper and literally taking the words apart. Disintegrating the shapes of the words into lines, circles, squares and color. Hearing words, seeing music, somehow marking sound in charcoal, ink, pencil, and paint.\n" +
+                "\n" +
+                "Since 2000, I’ve worked almost exclusively on stretched canvas, in turns building large, sometimes multi-paneled works on canvas, and smaller works on canvas and paper. From my studio in Portland OR, I partner with gallerists, design professionals, art agents, and private clients to place my paintings nationwide.",
+                R.drawable.murdza_therese
+        ));
+
     }
 
 
