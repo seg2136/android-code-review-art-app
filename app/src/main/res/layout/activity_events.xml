@@ -60,7 +60,8 @@
         android:textSize="16sp"
         android:textColor="#4f4f4f"
         android:typeface="serif"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -71,7 +72,8 @@
         android:layout_centerHorizontal="true"
         android:textSize="14sp"
         android:textStyle="bold"
-        android:typeface="serif"/>
+        android:typeface="serif"
+        android:layout_marginBottom="10dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -82,17 +84,20 @@
         android:layout_centerHorizontal="true"
         android:typeface="serif"
         android:textSize="16sp"
-        android:textColor="#4f4f4f"/>
+        android:textColor="#4f4f4f"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/eventDate"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/blue_sky_venue_info"
         android:id="@+id/eventVenueInfo"
-        android:layout_below="@+id/eventDescription"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
         android:textSize="14sp"
-        android:typeface="serif"/>
+        android:typeface="serif"
+        android:layout_above="@+id/mainButton"
+        android:layout_alignRight="@+id/mainButton"
+        android:layout_alignEnd="@+id/mainButton"
+        android:layout_marginBottom="10dp"/>
 
 </RelativeLayout>
