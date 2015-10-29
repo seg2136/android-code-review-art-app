@@ -21,4 +21,18 @@
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
         android:typeface="serif"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upcoming Events"
+        android:id="@+id/eventsLabel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#4f4f4f"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="24sp"
+        android:layout_marginBottom="10dp"/>
+
 </RelativeLayout>
