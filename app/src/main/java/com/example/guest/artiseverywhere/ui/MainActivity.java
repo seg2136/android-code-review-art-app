@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.guest.artiseverywhere.R;
+import com.example.guest.artiseverywhere.models.Artist;
 
 public class MainActivity extends AppCompatActivity {
 

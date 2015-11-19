@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.example.guest.artiseverywhere.ui.NewArtist">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add An Artist"
+        android:id="@+id/textView"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newArtistUserInput"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:hint="Artist Name"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/addArtistButton"
+        android:background="#4d1018"
+        android:textColor="@android:color/white"
+        android:width="150dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_alignBottom="@+id/newArtistUserInput"
+        android:layout_toRightOf="@+id/newArtistUserInput"
+        android:layout_toEndOf="@+id/newArtistUserInput"/>
+</RelativeLayout>

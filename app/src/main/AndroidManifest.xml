@@ -3,6 +3,7 @@
     package="com.example.guest.artiseverywhere" >
 
     <application
+        android:name="com.activeandroid.app.Application"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -31,6 +32,22 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="ArtApp.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+
+        <activity
+            android:name=".ui.NewArtist"
+            android:label="@string/title_activity_new_artist"
+            android:parentActivityName=".ui.ArtistsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guest.artiseverywhere.ui.ArtistsActivity" />
         </activity>
     </application>
 

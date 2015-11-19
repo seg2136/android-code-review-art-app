@@ -11,4 +11,5 @@
     <string name="blue_sky_venue_info">Blue Sky Oregon Center for the Photographic Arts //
                                         122 NW 8th Portland, OR 97209 //
                                         503.225.0210</string>
+    <string name="title_activity_new_artist">Add New Artist</string>
 </resources>

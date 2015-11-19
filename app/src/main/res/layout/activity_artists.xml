@@ -12,8 +12,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to Main"
-        android:id="@+id/mainButton"
+        android:text="Add Artist"
+        android:id="@+id/addArtistButton"
         android:background="#4d1018"
         android:textColor="@android:color/white"
         android:width="150dp"
@@ -24,63 +24,28 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Jeffrey Conley"
-        android:id="@+id/artistNameLabel"
-        android:textColor="#4f4f4f"
-        android:textSize="24sp"
-        android:typeface="serif"
-        android:textStyle="bold"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/artistImages"
-        android:src="@drawable/grasses_and_clouds"
-        android:layout_below="@+id/artistNameLabel"
-        android:layout_centerHorizontal="true"
-        />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next Artist"
-        android:id="@+id/nextArtistButton"
-        android:background="#a57a132b"
-        android:textSize="16sp"
-        android:typeface="serif"
+        android:text="Search"
+        android:id="@+id/searchButton"
+        android:background="#4d1018"
         android:textColor="@android:color/white"
-        android:textStyle="bold"
         android:width="150dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        android:layout_above="@+id/addArtistButton"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/scrollView"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/mainButton"
-        android:layout_marginBottom="10dp"
-        android:layout_below="@+id/artistImages"
-        android:layout_marginTop="10dp"
-        android:layout_alignRight="@+id/mainButton"
-        android:layout_toLeftOf="@+id/nextArtistButton">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/jeff_conley_bio"
-            android:id="@+id/artistInfo"
-            android:textColor="#4f4f4f"
-            android:textSize="16sp"
-            android:typeface="serif"/>
-    </ScrollView>
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"/>
 
 </RelativeLayout>
