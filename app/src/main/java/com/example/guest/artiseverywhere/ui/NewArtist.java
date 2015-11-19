@@ -1,9 +1,11 @@
 package com.example.guest.artiseverywhere.ui;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -13,16 +15,32 @@ import java.util.ArrayList;
 
 public class NewArtist extends AppCompatActivity {
 
-    private Button mNewArtistButton;
+    private Button mAddArtistButton;
     private EditText mNewArtistText;
+    private ArrayList<String> mArtists;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_artist);
 
+        mAddArtistButton = (Button) findViewById(R.id.addArtistButton);
+        mNewArtistText = (EditText) findViewById(R.id.newArtistUserInput);
 
 
+        mAddArtistButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addArtist();
+            }
+        });
+    }
+
+    private void addArtist() {
+        String newArtist = mNewArtistText.getText().toString();
+        Intent intent = new Intent(NewArtist.this, ArtistsActivity.class);
+        startActivity(intent);
+        mArtists.add(newArtist);
     }
 
     @Override
